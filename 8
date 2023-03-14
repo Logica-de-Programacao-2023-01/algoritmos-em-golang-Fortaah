@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+	var z float64
+	fmt.Print("Este é um aplicativo que da para descobrir qual é o seu salário apenas com o quanto você é pago por dia e quantos dias você trabalha por mês.")
+	fmt.Print("Quanto você é pago por dia de trabalho?")
+	fmt.Scan(&x)
+	fmt.Print("Quantos dias você trabalha em um mês?")
+	fmt.Scan(&y)
+	z = x * y
+	fmt.Println("O seu salário mensal é de", z)
+}
