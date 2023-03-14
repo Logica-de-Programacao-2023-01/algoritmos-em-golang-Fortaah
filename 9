@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+	var z float64
+	var a float64
+	var b float64
+	var c float64
+	fmt.Print("Este é um aplicativo que da para descobrir o real desconto de um produto quando o mesmo é dado em porcentagem.")
+	fmt.Print(" Qual o preço do produto?")
+	fmt.Scan(&x)
+	fmt.Print("Qual é a porcentagem do desconto?")
+	fmt.Scan(&y)
+	z = 100 - y
+	a = 100 * x
+	b = a / z
+	c = b - x
+	fmt.Println("O desconto foi de", c)
+}
