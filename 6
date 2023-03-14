@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+	var z float64
+	var a float64
+	var b float64
+	fmt.Print("Este é um aplicativo que da para descobrir o real aumento do salario de um tarabalhador usando porcentagem")
+	fmt.Print("Quanto você recebia antes do aumento?")
+	fmt.Scan(&x)
+	fmt.Print("Qual é a porcentagem prometida pelo seu patrão?")
+	fmt.Scan(&y)
+	z = y / 100
+	a = x * z
+	b = a + x
+	fmt.Println("O seu novo salário será de", b)
+}
