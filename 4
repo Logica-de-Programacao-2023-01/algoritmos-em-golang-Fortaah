@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x uint
+	var y uint
+	var z uint
+	var somatória uint
+	fmt.Print("Para fazermos uma média ponderada de três números inteiros, com pesos 2, 3 e 5, você precisará inserir os 3 números, sendo que os pesos serão aplicados na ordem de citação.")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
+	somatória = x*2 + y*3 + z*5
+	fmt.Println("A média ponderada deu:", somatória/10)
+}
