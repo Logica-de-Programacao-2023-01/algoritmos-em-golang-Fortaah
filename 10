@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+
+	fmt.Print("Este é um aplicativo que da para descobrir seu peso em libras.")
+	fmt.Print(" Quantos quilos você tem?")
+	fmt.Scan(&x)
+	y = x * 2.204623
+	fmt.Println("Seu peso em libras é de", y)
+}
