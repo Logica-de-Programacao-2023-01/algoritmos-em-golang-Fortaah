@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	var y float64
+	var z float64
+	fmt.Print("Este é um aplicativo que da para descobrir qual é antecessor e o sucessor de um número escolhido por você.")
+	fmt.Print("Qual número você escolherá?")
+	fmt.Scan(&x)
+	y = x - 1
+	z = x + 1
+	fmt.Println("O antecessor é", y, "e o sucessor é", z)
+}
