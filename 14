@@ -3,16 +3,30 @@ package main
 import "fmt"
 
 func main() {
-	var x = float64
-	var y = float64
-	var sexo = string
-	var z = float64
+	var x float64
+	var y float64
+	var sexo bool
+	var z float64
 	var j float64
-	fmt.Print("Qual é o seu sexo?")
-	fmt.Scan(*sexo)
+	fmt.Print(" Utilizando true or false: Você é de qual sexo Masculino? ")
+	fmt.Scan(&sexo)
 	fmt.Print("Qual é o seu peso?")
 	fmt.Scan(&x)
 	fmt.Print("Qual é a sua altura?")
 	fmt.Scan(&y)
 	z = y * y
-	j=	 x/z
+	j = x / z
+	if sexo == false && j < 19.1 {
+		fmt.Println("O seu imc deu:", j, "que para os padrões femininos, você está abaixo do peso")
+	} else if sexo == false && j > 19.1 && j < 25.8 {
+		fmt.Println("O seu imc deu:", j, "que para os padrões femininos,você está no peso ideal")
+	} else if sexo == false && j > 25.8 && j < 27.3 {
+		fmt.Println("Oseu imc deu:", j, "que para os padões femininos, você está um pouco acima do peso")
+	} else if sexo == false && j > 27.3 && j < 32.3 {
+		fmt.Println("O seu imc deu:", j, "qur para os padrões femininps, você está acima do peso")
+	}
+
+}
+
+https://indicedemassacorporal.com/movel/calculo-imc-feminino.html
+https://indicedemassacorporal.com/movel/calculo-imc-masculino.html
