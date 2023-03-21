@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var x int
+	var y int
+	var z int
+	fmt.Print("Me de 3 números para eu descobrir qual deles é o menor")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
+	if y > x && x > z {
+		fmt.Println(x, "é o menor número")
+	} else if x > y && y < z {
+		fmt.Println(y, "é menor número")
+	} else if x > z && z < y {
+		fmt.Println(z, "é o menor número")
+	} else if y == x && x < z {
+		fmt.Println(x, "e", y, "são os menores números")
+	} else if x == z && z < y {
+		fmt.Println(z, "e", x, "são os menores números")
+	} else if z == y && z < x {
+		fmt.Println(z, "e", y, "são os menores números")
+	} else {
+		fmt.Println(x, ",", y, "e", z, "são iguais.")
+	}
+}
