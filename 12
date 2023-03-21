@@ -12,7 +12,7 @@ func main() {
 	fmt.Scan(&x)
 	fmt.Scan(&y)
 	fmt.Scan(&z)
-	if y > x && x > z {
+	if y > x && x < z {
 		fmt.Println(x, "é o menor número")
 	} else if x > y && y < z {
 		fmt.Println(y, "é menor número")
