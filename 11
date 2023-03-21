@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var x int
+	var y int
+	fmt.Print("Me de 2 números para eu descobrir qual deles é o maior")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	if x > y {
+		fmt.Println(x, "é maior que", y)
+	} else if x < y {
+		fmt.Println(y, "é maior que", x)
+	} else {
+		fmt.Println(x, "e", y, "são iguais.")
+	}
+}
