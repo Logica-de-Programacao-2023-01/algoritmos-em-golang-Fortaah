@@ -1,0 +1,4 @@
+from função1 import soma as calculos
+x = float(input("Valor1"))
+y= float(input("valor2"))
+print(calculos(x,y))
