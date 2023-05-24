@@ -1,0 +1,9 @@
+def calcculadora(a,b,c):
+    if a == "soma":
+        print(b+c)
+    elif a == "divisão":
+        print(b/c)
+    elif a == "multiplicação":
+        print(b*c)
+    elif a == "subtração":
+        print(b-c)
