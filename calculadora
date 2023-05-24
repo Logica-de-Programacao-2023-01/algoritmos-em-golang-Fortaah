@@ -7,3 +7,5 @@ def calcculadora(a,b,c):
         print(b*c)
     elif a == "subtração":
         print(b-c)
+    else:
+        print("Você não escolheu uma das opções!")
