@@ -1,0 +1,5 @@
+from calculadora import calcculadora
+z = str(input("Divisão, soma, multiplicação ou subtração?"))
+x = float(input("Valor1"))
+y= float(input("valor2"))
+print(calcculadora(z,x,y))
