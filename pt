@@ -1,0 +1,40 @@
+prova 1
+Desenvolva o programa que leia vários(N) números e mostre estas informações: [5 pontos]
+A) Quantidade de elementos dados ;
+B) Soma dos valores ;
+C) media dos valores ;
+D) porcentagem de números pares ate dois casas decimais
+(( Pode usar o comando While ou For ))
+
+prova 2
+Desenvolva um programa que recebe N números inteiros e retorna o maior deles. Se os números forem iguais, retorne um deles.(usando while )
+código:
+N = int(input("Enter the number of integers: "))
+largest = None
+
+i = 0
+while i < N:
+    num = int(input("Enter an integer: "))
+    if largest is None or num > largest:
+        largest = num
+    i += 1
+
+print("The largest number is:", largest)
+----------------------------------------------------
+N = int(input("Enter the number of integers: "))
+sum = 0
+count_even = 0
+
+for i in range(N):
+    num = int(input("Enter an integer: "))
+    sum += num
+    if num % 2 == 0:
+        count_even += 1
+
+average = sum / N
+percentage_even = (count_even / N) * 100
+
+print("Number of elements:", N)
+print("Sum of values:", sum)
+print("Average of values:", average)
+print(f"Percentage of even numbers: {percentage_even:.2f}%")
